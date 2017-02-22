@@ -1,3 +1,3 @@
-$(documrnt).ready(function(){
+$(document).ready(function(){
 
 });
