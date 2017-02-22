@@ -2,6 +2,10 @@
 	margin:0 ;
 	padding: 0;
 	font-family: arial;
+}
+
+html
+{
 	font-size: 16px;
 }
 
@@ -88,7 +92,7 @@ h3
 p
 {
 	color: #959595;
-	font-size: 12px;
+	font-size: 0.75em;
 	line-height: 24px;
 }
 
@@ -168,4 +172,72 @@ footer > p
 .twitter
 {
 	background: url(../img/social4.png);
+}
+
+
+@media screen and (max-width: 900px)
+{
+	html
+	{
+		font-size: 30px;
+	}
+	body
+	{
+		width: 900px;
+	}
+	p
+	{
+		line-height: 30px;
+	}
+	.initialWidth
+	{
+		width: 100%;
+	}
+	nav 
+	{
+		width: 100%;
+	}
+	header
+	{
+		height: auto;
+		overflow: hidden;
+	}
+	nav ul
+	{	
+		justify-content: space-around;
+	}
+	nav ul li 
+	{
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	html
+	{
+		font-size: 34px;
+	}
+	#logo
+	{
+		display: none;
+	}
+	.leftStrip, .rightStrip
+	{
+		width: 100%;
+	}
+	.alignRight
+	{
+		text-align: center;
+	}
+	p, h3
+	{
+		text-align: center;
+	}
+	.leftStrip img
+	{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
