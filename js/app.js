@@ -27,8 +27,8 @@ var APP = (function()
 	return{
 		init: function()
 		{
-			$('nav li').each(function(index){
-				if(index < 3) $(this).on('click', function(){ getSubpages($(this).attr('data-url'));});
+			$('nav li a').each(function(index){
+				if(index < 2) $(this).on('click', function(){ getSubpages($(this).attr('data-url'));});
 			});
 			getSubpages('partials/home.html');
 		}
